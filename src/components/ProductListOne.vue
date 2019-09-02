@@ -26,7 +26,9 @@ export default {
             // this.$store.state.products.forEach(product => {
             //     product.price -= 1;
             // });
-            this.$store.commit('reducePrice');
+            // this.$store.commit('reducePrice'); // dispatch an action instead of commiting directly
+
+            this.$store.dispatch('reducePrice');
         }
     }
 };
