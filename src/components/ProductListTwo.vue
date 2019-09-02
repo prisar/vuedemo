@@ -1,6 +1,6 @@
 <template>
   <div id="product-list-one">
-    <h2>Product List One</h2>
+    <h2>Product List Two</h2>
     <ul>
       <li v-for="product in products">
         <span class="name">{{ product.name }}</span>
@@ -12,10 +12,11 @@
 
 <script>
 export default {
-  props: ["products"],
-  data() {
-    return {};
-  }
+    computed: {
+        products(){
+            return this.$store.state.products;
+        }
+    }
 };
 </script>
 
