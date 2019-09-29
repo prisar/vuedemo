@@ -36,3 +36,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 `docker push prisar/vuedemo:1.0`
 
 2. Link with github to auto build 
+
+### Netlify
+
+https://gallant-hermann-372cf3.netlify.com/
