@@ -37,6 +37,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 2. Link with github to auto build 
 
+<<<<<<< HEAD
 ### Netlify
 
 https://gallant-hermann-372cf3.netlify.com/
+=======
+VENoM -> Vuejs, Express, Nodejs, MongoDb
+>>>>>>> change readme
