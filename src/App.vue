@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <p>Is it Idle? - {{ isIdle }}</p>
+    <modal-idle v-if="isIdle" />
     <product-list-one></product-list-one>
     <product-list-two></product-list-two>
   </div>
@@ -9,18 +11,25 @@
 
 import ProductListOne from './components/ProductListOne';
 import ProductListTwo from './components/ProductListTwo';
+import ModalIdle from '@/components/ModalIdle';
 
 export default {
   components: {
     'product-list-one': ProductListOne,
-    'product-list-two': ProductListTwo
+    'product-list-two': ProductListTwo,
+    'modal-idle': ModalIdle
   },
   name: 'app',
   data() {
     return {
       
     }
-  }
+  },
+  computed: {
+		isIdle() {
+			return this.$store.state.idleVue.isIdle;
+		}
+	}
 }
 </script>
 
